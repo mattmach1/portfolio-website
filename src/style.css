@@ -21,13 +21,22 @@
 
 body {
   color: white;
+  
+}
+
+main {
   background-color: black;
+}
+
+html {
+  background-color: #242424;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
   
 }
 
@@ -129,12 +138,13 @@ header p {
 
 .contact {
   background-color: #242424;
-  padding: 15px;
+  padding: 25px 15px 35px 15px;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 form {
@@ -177,4 +187,93 @@ form button {
   padding-bottom: 10px;
   max-width: fit-content;
   margin-left: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+  gap: 1.5rem;
+  padding: 30px;
+  border-top: 1px solid white;
+  margin: 15px;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+.footer-icon-container {
+  display: flex;
+  gap: 1.5rem
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    max-width: 55vw;
+  }
+
+  .hero-text h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .hero-text p {
+    max-width: 85%;
+    margin: 0 auto
+  }
+
+  .hero img {
+    max-width: 300px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+  }
+
+  li {
+    font-size: 2.5rem;
+  }
+
+  .projects h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .project-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact {
+    padding: 50px 150px
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
