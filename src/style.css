@@ -33,23 +33,26 @@ html {
 }
 
 header {
+  align-items: center;
+  background-color: black;
+}
+
+.header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  
 }
 
 header p {
-  font-size: 2rem;
- margin: 20px
+  font-size: 1.5rem;
+  margin: 20px 0 10px 0;
 }
 
 
 .header-icon-container {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 
@@ -58,17 +61,17 @@ header p {
   text-align: center;
   border-bottom: 1px solid white;
   padding-bottom: 30px;
-  margin: 0 15px 30px 15px;
+  margin: 0 15px;
 }
 
 .hero img {
   max-width:200px;
   border-radius: 10%;
-  margin: 30px 0;
+  margin: 15px 0 30px 0;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 40px;
   margin-bottom: 20px;
 }
@@ -79,6 +82,7 @@ header p {
   border-bottom: 2px;
   border-color: white;
   border-width: 2px;
+  font-size: .9rem;
 }
 
 .hero span {
@@ -94,10 +98,11 @@ header p {
   margin: 0 15px;
 }
 
-.skills ul {
-  list-style: none;
-  font-size: 2.5rem;
-  line-height: 90px;
+.skills-grid {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.5rem;
 }
 
 .projects {
@@ -209,6 +214,10 @@ footer p {
   gap: 1.5rem
 }
 
+textarea {
+  resize: none;
+}
+
 @media (min-width: 768px) {
   header {
     flex-direction: row;
@@ -216,11 +225,34 @@ footer p {
     padding: 0 25px;
   }
 
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .header-container p {
+    font-size: 1.5rem;
+  }
+
+  .header-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .hero {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 
   .hero-text {
@@ -246,12 +278,20 @@ footer p {
     display: flex;
     flex-direction: row;
     text-align: left;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left: 100px
   }
 
-  li {
-    font-size: 2.5rem;
+   .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-auto-rows: auto;
+    row-gap: 3rem;
+    column-gap: 10rem;
+    text-align: left;
+    font-size: 2.3rem;
   }
+
 
   .projects h2 {
     font-size: 3rem;
@@ -276,4 +316,89 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    align-items: center;
+  }
+
+  .header-icon-container img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero img {
+    max-width: 400px;
+  }
+
+  .hero-container h1 {
+    font-size: 4rem;
+    max-width:45vw
+  }
+
+  .hero-container p {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-auto-rows: auto;
+    gap: 6rem;
+    text-align: left;
+    font-size: 3rem;
+  }
+
+ 
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+
+  form {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
 }
