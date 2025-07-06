@@ -149,6 +149,10 @@ header img:hover {
   letter-spacing: 2px;
 }
 
+.project-card a:hover {
+  color:#4EE1A0
+}
+
 .contact {
   background-color: #242424;
   padding: 25px 15px 35px 15px;
