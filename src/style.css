@@ -55,6 +55,14 @@ header p {
   gap: 1rem;
 }
 
+header img {
+  transition: filter 0.3s ease;
+}
+
+header img:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(29%) saturate(758%) hue-rotate(91deg) brightness(100%) contrast(91%);
+}
+
 
 
 .hero {
@@ -214,6 +222,14 @@ footer p {
   gap: 1.5rem
 }
 
+footer img {
+  transition: filter 0.3s ease;
+}
+
+footer img:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(29%) saturate(758%) hue-rotate(91deg) brightness(100%) contrast(91%);
+}
+
 textarea {
   resize: none;
 }
@@ -279,12 +295,11 @@ textarea {
     flex-direction: row;
     text-align: left;
     justify-content: center;
-    padding-left: 100px
   }
 
    .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     row-gap: 3rem;
     column-gap: 10rem;
@@ -328,7 +343,7 @@ textarea {
   .header-container {
     display: flex;
     justify-content: space-between;
-    width: 1524px;
+    width: 1024px;
     align-items: center;
   }
 
@@ -346,7 +361,7 @@ textarea {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    max-width: 1524px;
+    max-width: 1024px;
   }
 
   .hero-text {
