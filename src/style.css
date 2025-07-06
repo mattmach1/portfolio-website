@@ -160,6 +160,11 @@ header img:hover {
   margin-bottom: 25px;
 }
 
+.contact button:hover {
+   color: #4EE1A0;
+   cursor: pointer;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -179,7 +184,13 @@ form input {
 textarea {
   background-color: #242424;
   border: none;
+  resize: none;
 }
+
+input, textarea {
+  color: white
+}
+
 
 .form-group {
   display: flex;
@@ -230,9 +241,7 @@ footer img:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(29%) saturate(758%) hue-rotate(91deg) brightness(100%) contrast(91%);
 }
 
-textarea {
-  resize: none;
-}
+
 
 @media (min-width: 768px) {
   header {
