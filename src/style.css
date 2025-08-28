@@ -64,13 +64,25 @@ header img:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(29%) saturate(758%) hue-rotate(91deg) brightness(100%) contrast(91%);
 }
 
-
+#vanta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
 
 .hero {
+  position: relative;
+  height: 100vh;
   text-align: center;
   border-bottom: 1px solid white;
   padding-bottom: 30px;
   margin: 0 15px;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero img {
@@ -93,6 +105,7 @@ header img:hover {
   border-width: 2px;
   font-size: .9rem;
 }
+
 
 .hero span {
   color: white;
@@ -346,7 +359,6 @@ footer img:hover {
     justify-content: space-between;
   }
 }
-
 @media (min-width: 1024px) {
   header {
     display: flex;
