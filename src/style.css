@@ -128,6 +128,7 @@ header img:hover {
 }
 
 .projects {
+  height: 50vh;
   padding: 50px 0;
   margin: 0 15px;
 }
@@ -369,7 +370,7 @@ footer img:hover {
   .header-container {
     display: flex;
     justify-content: space-between;
-    width: 1024px;
+    width: 1300px;
     align-items: center;
   }
 
@@ -387,7 +388,7 @@ footer img:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    max-width: 1024px;
+    
   }
 
   .hero-text {
