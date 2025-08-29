@@ -128,7 +128,6 @@ header img:hover {
 }
 
 .projects {
-  height: 50vh;
   padding: 50px 0;
   margin: 0 15px;
 }
@@ -138,14 +137,27 @@ header img:hover {
   text-align: center;
 }
 
+.project-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* keeps a uniform silhouette */
+  object-fit: contain;
+  border-radius: 8px;
+  background: #0b0b0b;
+  border-radius: 8px;
+  
+}
+
 .projects h3 {
   font-size: 1.5rem;
+  text-align: center;
+  margin: 2.5rem 0 1rem 0
 }
 
 .technologies-wrapper {
   display: flex;
   gap: 1.5rem;
   padding:10px 0;
+  justify-content: center;
 }
 
 .technologies-wrapper p {
@@ -342,9 +354,8 @@ footer img:hover {
   }
 
   .project-card-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 
   .contact {
