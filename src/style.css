@@ -139,7 +139,7 @@ header img:hover {
 
 .project-photo {
   width: 100%;
-  aspect-ratio: 16 / 9;   /* keeps a uniform silhouette */
+  aspect-ratio: 16 / 9;
   object-fit: contain;
   border-radius: 8px;
   background: #0b0b0b;
@@ -196,6 +196,11 @@ header img:hover {
    cursor: pointer;
 }
 
+.hp-field { 
+  position: absolute; left: -9999px; width: 1px; height: 1px; 
+  overflow: hidden;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -216,6 +221,7 @@ textarea {
   background-color: #242424;
   border: none;
   resize: none;
+  
 }
 
 input, textarea {

@@ -63,24 +63,46 @@
           <div class="project-card-wrapper">
             <div class="project-card">
               <h3>Vehicle Maintenance Log</h3>
-              <img class="project-photo" alt="Vehicle Maintenance Log Dashboard view" loading="lazy" decoding="async" src="./assets/images/dashboard.png" />
+              <img
+                class="project-photo"
+                alt="Vehicle Maintenance Log Dashboard view"
+                loading="lazy"
+                decoding="async"
+                src="./assets/images/dashboard.png"
+              />
               <div class="technologies-wrapper">
                 <p>React</p>
                 <p>Tailwind</p>
                 <p>Typescript</p>
                 <p>Shadcn/ui</p>
               </div>
-              <a href="https://github.com/mattmach1/car-maintenance-log" target="_blank" rel="noopener noreferrer">VIEW CODE</a>
+              <a
+                href="https://github.com/mattmach1/car-maintenance-log"
+                target="_blank"
+                rel="noopener noreferrer"
+                >VIEW CODE</a
+              >
             </div>
             <div class="project-card">
               <h3>Vacation Organizer</h3>
-              <img class="project-photo" alt="Vacation Organizer screenshot" loading="lazy" decoding="async" src="./assets/images/vacation-details-menu.png" />
+              <img
+                class="project-photo"
+                alt="Vacation Organizer screenshot"
+                loading="lazy"
+                decoding="async"
+                src="./assets/images/vacation-details-menu.png"
+              />
               <div class="technologies-wrapper">
                 <p>Java</p>
                 <p>Spring Boot</p>
                 <p>Kotlin</p>
               </div>
-              <a href="https://github.com/mattmach1/vacation-organizer" target="_blank" rel="noopener noreferrer">VIEW CODE</a>
+              <a
+                href="https://github.com/mattmach1/vacation-organizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                >VIEW CODE</a
+              >
             </div>
           </div>
         </div>
@@ -88,22 +110,39 @@
 
       <div class="section contact">
         <h2>Contact</h2>
-        <form action="https://formspree.io/f/xvgrndll" method="POST">
+        <form action="https://formspree.io/f/xvgrndll" method="POST" id="contact-form">
+          <!-- Honeypot -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website"></label>
+            <input
+              type="text"
+              id="website"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
           <div class="form-group">
             <label for="name">NAME:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" inputmode="text" maxlength="80" required />
           </div>
 
           <div class="form-group">
             <label for="email">EMAIL:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" inputmode="email" maxlength="120" required />
           </div>
 
           <div class="form-group">
             <label for="message">MESSAGE:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
           </div>
-          
+
+          <!-- Subject line for inbox -->
+          <input type="hidden" name="_subject" value="Portfolio Contact">
+
+          <!-- Timestamp trap -->
+          <input type="hidden" name="form_started_at" id="form_started_at">
+
           <button type="submit">Send</button>
         </form>
       </div>
