@@ -1,6 +1,9 @@
 import "./style.css";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 let vantaEffect;
 
