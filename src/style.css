@@ -1,13 +1,7 @@
 
 @font-face {
   font-family: 'SpaceGrotesk';
-  src: url('./assets/fonts/SpaceGrotesk-Bold.ttf');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('./assets/fonts/SpaceGrotesk-Medium.ttf');
+  src: url('../assets/fonts/SpaceGrotesk-Medium.ttf');
   font-weight: 500;
 }
 
@@ -21,6 +15,7 @@
 
 body {
   color: white;
+  font-weight: 500;
   
 }
 
@@ -234,7 +229,7 @@ input, textarea {
   align-items: start;
   gap: 1rem;
   border-bottom: 1px solid white;
-  font-weight: 500;
+
   color: #D9D9D9
 }
 
