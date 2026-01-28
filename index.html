@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,7 +40,7 @@
           <div class="hero-text">
             <h1>Nice to meet you! I'm <span>Matt Brown</span>.</h1>
             <p>
-              I'm a frontend developer who is passionate about building modern
+              I'm a fullstack developer who is passionate about building modern
               web apps.
             </p>
           </div>
@@ -48,11 +48,11 @@
       </div>
       <div class="section skills">
         <div class="skills-grid">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
           <p>React</p>
-          <p>Tailwind</p>
+          <p>Typescript</p>
+          <p>Express</p>
+          <p>Node</p>
+          <p>SQL</p>
           <p>Git</p>
         </div>
       </div>
@@ -62,6 +62,28 @@
           <h2>Projects</h2>
           <div class="project-card-wrapper">
             <div class="project-card">
+              <div class="project-card">
+                <h3>Restaurant Inventory Management System</h3>
+                <img
+                  class="project-photo"
+                  alt="Restaurant Inventory recipes view"
+                  loading="lazy"
+                  decoding="async"
+                  src="./assets/images/recipes-expanded.png"
+                />
+                <div class="technologies-wrapper">
+                  <p>React</p>
+                  <p>Typescript</p>
+                  <p>Node</p>
+                  <p>React Query</p>
+                </div>
+                <a
+                  href="https://github.com/mattmach1/restaurant-inventory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >VIEW CODE</a
+                >
+              </div>
               <h3>Vehicle Maintenance Log</h3>
               <img
                 class="project-photo"
@@ -110,7 +132,11 @@
 
       <div class="section contact">
         <h2>Contact</h2>
-        <form action="https://formspree.io/f/xvgrndll" method="POST" id="contact-form">
+        <form
+          action="https://formspree.io/f/xvgrndll"
+          method="POST"
+          id="contact-form"
+        >
           <!-- Honeypot -->
           <div class="hp-field" aria-hidden="true">
             <label for="website"></label>
@@ -124,24 +150,44 @@
           </div>
           <div class="form-group">
             <label for="name">NAME:</label>
-            <input type="text" id="name" name="name" inputmode="text" maxlength="80" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              inputmode="text"
+              maxlength="80"
+              required
+            />
           </div>
 
           <div class="form-group">
             <label for="email">EMAIL:</label>
-            <input type="email" id="email" name="email" inputmode="email" maxlength="120" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              inputmode="email"
+              maxlength="120"
+              required
+            />
           </div>
 
           <div class="form-group">
             <label for="message">MESSAGE:</label>
-            <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="2000"
+              required
+            ></textarea>
           </div>
 
           <!-- Subject line for inbox -->
-          <input type="hidden" name="_subject" value="Portfolio Contact">
+          <input type="hidden" name="_subject" value="Portfolio Contact" />
 
           <!-- Timestamp trap -->
-          <input type="hidden" name="form_started_at" id="form_started_at">
+          <input type="hidden" name="form_started_at" id="form_started_at" />
 
           <button type="submit">Send</button>
         </form>
